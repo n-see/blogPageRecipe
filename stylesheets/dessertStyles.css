@@ -1,0 +1,10 @@
+body{
+    background-color: tan;
+}
+.title{
+    margin-top: 10px;
+    text-align: center;
+}
+.card{
+    height: 400px;
+}

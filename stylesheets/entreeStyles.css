@@ -1,0 +1,11 @@
+body{
+    background-color: tan;
+}
+.title{
+    text-align: center;
+    margin-top: 10px;
+}
+img{
+    width: 400px;
+    height: 400px;
+}

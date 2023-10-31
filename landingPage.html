@@ -1,0 +1,141 @@
+<!-- Neo See
+10/26/2023
+Mini Challenge 3
+Create a recipe website using bootstrap.
+One savory recipe and one dessert recipe
+Recipes must include images (try finding some on Unsplash!)
+Must have a navbar that is consistent with all pages. Navbar does not count towards required number of bootstrap components.
+Minimum of 3 bootstrap components per page
+Hierarchy and design of the page should make sense
+
+Peer Review by: David Jimenez - bold current page in navbar; label bootstrap component for easy viewing
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recipes</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="landingPage.html"
+          >Super Awesome Food Site</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="landingPage.html"
+              ><b>Home</b></a>
+            <a class="nav-link" href="entreePage.html">Entrée</a>
+            <a class="nav-link" href="dessertPage.html">Dessert</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <h1 class="title">Choose your course</h1>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <div class="container">
+      <div class="row">
+     
+        <!-- fettuccine alfredo card -->
+      <div class="card col-6 entree" >
+        <!-- carosuel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/Fet.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/fet2.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/fet3.jpg" class="d-block" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title">Totally not sketch Fettuccine Alfredo</h5>
+          <p class="card-text">This is totally not sketch. </p>
+          <a href="entreePage.html" class="btn btn-secondary">The Entrée</a>
+        </div>
+      </div>
+
+      <!-- oreo pizookie card -->
+      <div class="card col-6 dessert">
+
+        <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/oreo.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/oreo2.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/oreo3.jpg" class="d-block" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title">Totally not sketch Oreo Pizookie</h5>
+          <p class="card-text">This is totally not sketch.</p>
+          <!-- Bootstarp componet -->
+          <a href="dessertPage.html" class="btn btn-secondary">The Dessert</a>
+        </div>
+      </div>
+      </div>
+        
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    background-color: tan;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.entree{
+    text-align: center;
+
+}
+.dessert{
+    text-align: center;
+   
+}
+.buttons{
+    margin-top: 10px;
+}
+.card{
+    background-color: rgb(187, 160, 126);
+}
+img{
+    width: 600px;
+    height: 400px;
+}
